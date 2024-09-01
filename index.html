@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Cadastrar Contato Alphacode</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="page-container">
+    <div class="top-bar">
+      <img src="./images/logo_alphacode.png" alt="Logo">
+      <p>Cadastro de Contatos</p>
+    </div>
+
+    <div class="content">
+      <form id="contactForm" class="formulario-cadastro">
+        <div class="form-group">
+          <label for="fullName">Nome completo:</label>
+          <input type="text" id="fullName" placeholder="Ex.: Letícia Pacheco dos Santos">
+        </div>
+        <div class="form-group">
+          <label for="birthDate">Data de nascimento:</label>
+          <input type="date" id="birthDate" placeholder="Ex.: 03/10/2003">
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" placeholder="Ex.: leticia@gmail.com">
+        </div>
+        <div class="form-group">
+          <label for="mobile">Celular para contato:</label>
+          <input type="tel" id="mobile" placeholder="Ex.: (11) 98493-2039">
+        </div>
+        <div class="form-group checkboxes">
+          <div class="left-group">
+            <label><input type="checkbox" id="whatsapp"> Número de celular possui Whatsapp</label>
+            <label><input type="checkbox" id="sms-notifications"> Enviar notificações por SMS</label>
+          </div>
+          <div class="right-group">
+            <label><input type="checkbox" id="email-notifications"> Enviar notificações por E-mail</label>
+          </div>
+        </div>
+        <button type="submit" class="btn-cadastrar">Cadastrar contato</button>
+      </form>
+
+      <hr>
+
+      <div class="container-tabela">
+        <table id="contactTable">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Data de nascimento</th>
+              <th>E-mail</th>
+              <th>Celular para contato</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-id="1">
+              <td>Letícia Pacheco</td>
+              <td>03/10/2003</td>
+              <td>leticia@gmail.com</td>
+              <td>(11) 98493-2039</td>
+              <td>
+                <img src="./images/editar.png" alt="Editar" class="icon edit" data-id="1">
+                <img src="./images/excluir.png" alt="Excluir" class="icon delete" data-id="1">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <div class="left-section">
+        <p>Termos | Políticas</p>
+      </div>
+      <div class="center-section">
+        <p>© Copyright 2022 | Desenvolvido por</p>
+        <img src="./images/logo_rodape_alphacode.png" alt="rodape" class="footer-logo">
+      </div>
+      <div class="right-section">
+        <p>© Alphacode IT Solutions 2022</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
